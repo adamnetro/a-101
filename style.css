@@ -50,3 +50,41 @@ button:active{
     margin-top: 1em;
 }
 
+h1{
+    color: red;
+    font-size: 3em;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+@media (max-width: 1080px) {
+
+    .work-palce{
+        width: 80%;
+        margin-top: 50%;
+        margin-left: 12%;
+    }
+    
+    input{
+        width: 100%;
+        text-align: center;
+    }
+    
+    button{
+        margin-left: 39%;
+        margin-top: 2%;
+        font-size: 4em;
+    }
+    
+    
+    .btn2{
+        margin-left: 39%;
+        margin-top: 1em;
+    }
+
+    h1{
+        margin-left: 12%;
+        margin-top: 20%;
+    }
+}

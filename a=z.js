@@ -102,3 +102,10 @@ Btn2.addEventListener('click', function() {
     }
 })
 
+
+
+Btn.addEventListener('click', () => {
+    if(!Box.value){
+        alert("enter your words")
+    }
+});
