@@ -1,6 +1,7 @@
 var Box = document.querySelector('input');
 var Btn = document.querySelector('.btn');
 var Btn2 = document.querySelector('.btn2');
+var result = document.querySelector('.result');
 
 
 function AZ(){
@@ -40,72 +41,26 @@ let romoz = {
 var tarmiz = Box => Box.value.replace(/[a-zA-Z]/g, letter => romoz[letter.toLowerCase()] || letter);
 
 Btn.addEventListener('click', () => {
-    alert(tarmiz(Box));
+    if(Box.value){
+    result.value = tarmiz(Box);
+    result.style.color = "rgb(0, 255, 0)"
+}
 });
 
 }
 
-
-function ZA(){
-
-    Box.placeholder = "Enter your word Z => A"
-
-    let romoz = {
-        z :"a",
-        y :"b",
-        x :"c", 
-        w :"d",
-        v :"e",
-        u :"f",
-        t :"g",
-        s :"h",
-        r :"i",
-        q :"j",
-        p :"k",
-        o :"l",
-        n :"m",
-        m :"n",
-        l :"o",
-        k :"p",
-        j :"q",
-        i :"r",
-        h :"s",
-        g :"t",
-        f :"u",
-        e :"v",
-        d :"w",
-        c :"x",
-        b :"y",
-        a :"z",
-    }
-
-    var tarmiz = Box => Box.value.replace(/[a-zA-Z]/g, letter => romoz[letter.toLowerCase()] || letter);
-    Btn.addEventListener('click', () => {
-        alert(tarmiz(Box));
-    });
-}
 
 
 window.onload = function(){
     AZ();
 }
 
-let swtch = false;
-
-Btn2.addEventListener('click', function() {
-    if(!swtch){
-        AZ();
-        swtch = true;
-    }else {
-        ZA();
-        swtch = false;
-    }
-})
 
 
 
 Btn.addEventListener('click', () => {
     if(!Box.value){
-        alert("enter your words")
+        result.value = "enter your words"
+        result.style.color = "red"
     }
 });
