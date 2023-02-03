@@ -61,6 +61,7 @@ function deletFT() {
 
     deletWD.addEventListener('click', () => {
         Box.value = ""
+        deletWD.style.display = "none"
     })
 
   }
