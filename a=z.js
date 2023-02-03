@@ -46,8 +46,29 @@ Btn.addEventListener('click', () => {
     result.style.color = "rgb(0, 255, 0)"
 }
 });
-
 }
+
+
+function deletFT() {
+    var deletWD = document.querySelector('.dlt');
+    if(Box.value){
+        deletWD.style.display = "block"
+    }
+
+    if(Box.value == ""){
+        deletWD.style.display = "none"
+    }
+
+    deletWD.addEventListener('click', () => {
+        Box.value = ""
+    })
+
+  }
+  
+Box.addEventListener('input', () => {
+    deletFT()
+})
+  
 
 
 
@@ -57,10 +78,16 @@ window.onload = function(){
 
 
 
-
 Btn.addEventListener('click', () => {
     if(!Box.value){
-        result.value = "enter your words"
+        result.value = "Enter your words"
         result.style.color = "red"
+        result.style.animationName = "mabritch";
+        let audio = new Audio("errorSD.mp3");
+        audio.play()
+        setTimeout( function(){
+            result.style.animationName = "none";
+        },200);
     }
+    
 });

@@ -78,7 +78,43 @@ a{
     outline: none;
     resize: none;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.199);
+    animation-name: none;
+    animation-duration: 0.2s;
 }
+
+.fnd-wrk{
+    display: flex;
+}
+
+.dlt{
+    margin-top: 14%;
+    cursor: pointer;
+    display: none;
+}
+
+@keyframes mabritch{
+    0% {
+        margin-left: 1em;
+    }
+
+    25% {
+        margin-right: 2em;
+    }
+
+    50%{
+        margin-left: 2em;
+    }
+
+    75% {
+        margin-right: 2em;
+    }
+
+    100%{
+        margin-left: 1em;
+    }
+}
+
+
 
 button{
     font-size: 3em;
