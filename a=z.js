@@ -55,7 +55,7 @@ function deletFT() {
         deletWD.style.display = "block"
     }
 
-    if(Box.value == ""){
+    if(!Box.value){
         deletWD.style.display = "none"
     }
 
