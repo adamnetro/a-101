@@ -11,7 +11,7 @@
 
 body{
     background-color: #11161a;
-    background: url(images/bckgd.jpg);
+    background: url(images/bckgd2.jpg);
     background-attachment: fixed;
 }
 
@@ -20,24 +20,8 @@ body{
     height: 40%;
     margin-left: 70%;
     margin-top: 11%;
-    animation-name: pstn-lg;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
-@keyframes pstn-lg{
-    0% {
-        margin-bottom: 4em;
-    }
-
-    50% {
-        margin-top: 4em;
-    }
-
-    100% {
-        margin-bottom: 4em;
-    }
-}
 
 .work-palce{
     background-color: #7b00da;
@@ -60,11 +44,10 @@ input{
     color: white;
 }
 
-a{
-    font-size: 4em;
-    color: white;
-    margin-left: 30%;
+.natija{
+    display: block;
 }
+
 
 .result{
     background-color: #101519;
@@ -81,6 +64,16 @@ a{
     animation-name: none;
     animation-duration: 0.2s;
 }
+
+.copy{
+    background-color:rgb(0, 197, 0);
+    font-size: 1.3em;
+    padding: 5px 17em;
+    border-radius: 0px 0px 30px 30px;
+    margin-left: 10%;
+    display: none;
+}
+
 
 .fnd-wrk{
     display: flex;
@@ -130,17 +123,65 @@ button:active{
     transition: 0.1s ease;
 }
 
-.btn2{
-    margin-left: 44%;
-    margin-top: 1em;
+
+.itm-swtch{
+    display: block;
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 73%;
+}
+ .fnd-swtch{
+    background-color: #7b00da;
+    color: white;
+    cursor: pointer;
+    padding: 0px 20px;
+    border-radius: 30px 30px 0px 0px;
+    font-size: 3em;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.199);
 }
 
-h1{
-    color: red;
-    font-size: 3em;
-    margin-left: 20%;
-    margin-top: 5%;
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.lst-cd {
+    background-color: #101519;
+    padding: 20px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.199);
+    margin-left: 0%;
+}
+
+.lst-cd button{
+    display: block;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.lst-cd button:focus{
+    color: #af46ff;
+    font-weight: 900;
+}
+
+.switch{
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+    margin-left: 30%;
+    transition: 0.2s ease;
+}
+
+.switchG{
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
+
+
+
 
 
 @media (max-width: 1080px) {
@@ -162,12 +203,6 @@ h1{
         font-size: 4em;
     }
     
-    
-    .btn2{
-        margin-left: 36%;
-        margin-top: 1em;
-    }
-
     h1{
         margin-left: 12%;
         margin-top: 20%;

@@ -9,8 +9,18 @@
     <title>A = Z</title>
 </head>
 <div>
-    <button></button>
-<img class="logo-bckgd" src="images/logo.png">
+    <div class="itm-swtch">
+        <a class="fnd-swtch">Code list :<span>▾</span></a>
+        <div class="lst-cd">
+            <button class="cd1">A = Z</button>
+            <hr>
+            <button class="cd2">A = 又</button>
+            <hr>
+            <button>?</button>
+            <hr>
+            <button>?</button>
+        </div>
+    </div>
 </div>
 <body>
     <div class="fnd-wrk">
@@ -21,13 +31,15 @@
 <button class="dlt"><i class="fa-solid fa-trash"></i></button>
 </div>
 
-    <a><i class="fa-solid fa-repeat"></i></a>
+    <button class="switch" onclick="dwara()"><i class="fa-solid fa-repeat"></i></button>
     <div class="natija">
-    <textarea class="result" placeholder="Result" readonly></textarea>
+    <textarea class="result" placeholder="Result"></textarea>
 </div>
+<button class="copy">Copy</button>
 
 <button class="btn2" style="background-color: red; display: none;">Switch <i class="fa-solid fa-repeat"></i></button>
 
     <script src="a=z.js"></script>
+    <script src="other-act.js"></script>
 </body>
 </html>
