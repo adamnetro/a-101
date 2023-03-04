@@ -75,5 +75,13 @@ Copy.addEventListener('click', function(){
     Copy.style.display = "none"
 })
 
+const video = document.querySelector('video');
+let audio = new Audio('dopdop.mp3')
 
+Btn.addEventListener('click', () => {
+    if(Box.value === "kiiiiii xsprwr wryrwly wly wly wly bvh bvh bvh xsprwryrwrk xsprwryrwrk xsprwryr wzyr wzyr wzyr"){
+        video.style.display = "block"
+        audio.play()
+    }
+})
 
